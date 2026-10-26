@@ -1,0 +1,19 @@
+.page { max-width: var(--largura-formulario); margin: 0 auto; display: grid; gap: 24px; }
+.title { font-size: 36px; }
+.form { display: grid; gap: 24px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.similar { border: var(--borda-padrao); border-radius: var(--raio-cartao); padding: 20px; display: grid; gap: 12px; }
+.similar h2 { font-size: 20px; }
+.similar ul { display: grid; gap: 12px; }
+.similar li { display: grid; gap: 4px; }
+.similarMeta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+
+@media (max-width: 639px) {
+  .title { font-size: 28px; }
+  .actions {
+    position: sticky; bottom: 0; z-index: 10; margin: 0 calc(var(--margem-pagina) * -1);
+    padding: 12px var(--margem-pagina) calc(12px + env(safe-area-inset-bottom));
+    background: var(--cor-fundo); border-top: var(--borda-padrao);
+  }
+  .actions > button { flex: 1; }
+}

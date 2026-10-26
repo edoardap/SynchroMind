@@ -1,0 +1,10 @@
+.avatar {
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--cor-tinta);
+  color: #fff;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.deleted { background: var(--cor-borda); color: var(--cor-tinta); }

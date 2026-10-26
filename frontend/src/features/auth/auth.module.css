@@ -1,0 +1,11 @@
+.title { font-size: 30px; }
+.lead { color: var(--cor-texto-secundario); }
+.form { display: grid; gap: 20px; }
+.actions { display: grid; gap: 12px; justify-items: start; }
+.formActions { display: grid; gap: 12px; justify-items: stretch; }
+.formActions a { justify-self: center; }
+.privacy { background: var(--cor-primaria-fundo); border-radius: var(--raio-pequeno); padding: 16px; display: grid; gap: 10px; }
+.privacy p { font-size: var(--texto-meta); color: var(--cor-texto); line-height: 1.5; }
+.privacyText { font-size: 15px; }
+.centered { text-align: center; justify-items: center; }
+.muted { font-size: var(--texto-meta); color: var(--cor-texto-secundario); }

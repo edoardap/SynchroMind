@@ -1,0 +1,15 @@
+.list { display: flex; gap: 4px; border-bottom: var(--borda-padrao); overflow-x: auto; overflow-y: hidden; }
+.tab {
+  min-height: var(--alvo-toque);
+  padding: 8px 14px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--cor-texto);
+  white-space: nowrap;
+}
+.tab:hover { background: var(--cor-primaria-fundo); }
+.active { border-bottom-color: var(--cor-primaria); font-weight: 800; }
+.panel { padding-top: 24px; }

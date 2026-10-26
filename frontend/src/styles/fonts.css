@@ -1,0 +1,7 @@
+/* Urbanist (IDE.IA design system), hospedada junto com o produto. */
+@font-face { font-family: 'Urbanist'; font-style: normal; font-weight: 400; font-display: swap; src: url('../assets/fonts/Urbanist-Regular.woff2') format('woff2'); }
+@font-face { font-family: 'Urbanist'; font-style: normal; font-weight: 500; font-display: swap; src: url('../assets/fonts/Urbanist-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Urbanist'; font-style: normal; font-weight: 600; font-display: swap; src: url('../assets/fonts/Urbanist-SemiBold.woff2') format('woff2'); }
+@font-face { font-family: 'Urbanist'; font-style: normal; font-weight: 700; font-display: swap; src: url('../assets/fonts/Urbanist-Bold.woff2') format('woff2'); }
+@font-face { font-family: 'Urbanist'; font-style: normal; font-weight: 800; font-display: swap; src: url('../assets/fonts/Urbanist-ExtraBold.woff2') format('woff2'); }
+@font-face { font-family: 'Urbanist'; font-style: normal; font-weight: 900; font-display: swap; src: url('../assets/fonts/Urbanist-Black.woff2') format('woff2'); }

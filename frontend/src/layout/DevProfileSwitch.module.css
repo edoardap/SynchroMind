@@ -1,0 +1,21 @@
+.box {
+  position: fixed;
+  left: 8px;
+  bottom: 8px;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border: 1px dashed var(--cor-borda-campo);
+  border-radius: var(--raio-pilula);
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 12px;
+  color: var(--cor-texto-secundario);
+  opacity: 0.85;
+}
+.box:hover, .box:focus-within { opacity: 1; }
+.box select { font-size: 12px; border: 0; background: transparent; color: var(--cor-texto); }
+@media (max-width: 639px) {
+  .box { bottom: 8px; }
+}

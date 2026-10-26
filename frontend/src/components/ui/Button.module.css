@@ -1,0 +1,45 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--alvo-toque);
+  padding: 0 20px;
+  border: 2px solid transparent;
+  border-radius: var(--raio-pilula);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--transicao), box-shadow var(--transicao), border-color var(--transicao);
+}
+.button:hover { text-decoration: none; }
+.lg { min-height: 56px; padding: 0 28px; }
+
+/* Primário: fundo verde com texto escuro (6,8:1). No hover o fundo não escurece
+   (nenhum par de texto passa em 4,5:1): sublinhado e sombra interna em tinta. */
+.primary { background: var(--cor-primaria); color: var(--cor-tinta); }
+.primary:hover:not(:disabled) { text-decoration: underline; box-shadow: inset 0 0 0 2px var(--cor-tinta); }
+
+.dark { background: var(--cor-tinta); color: #fff; }
+.dark:hover:not(:disabled) { background: var(--cor-titulo); text-decoration: underline; }
+
+.outline { background: var(--cor-fundo); color: var(--cor-texto); border-color: var(--cor-borda-campo); font-weight: 600; }
+.outline:hover:not(:disabled) { border-color: var(--cor-texto-verde); }
+
+.danger { background: var(--cor-erro); color: #fff; }
+.danger:hover:not(:disabled) { text-decoration: underline; box-shadow: inset 0 0 0 2px #fff; }
+
+.text { background: transparent; color: var(--cor-texto-verde); padding: 0 8px; }
+.text:hover:not(:disabled) { text-decoration: underline; }
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.button[aria-busy='true']:disabled { cursor: progress; }
+
+@media (max-width: 639px) {
+  .button { min-height: var(--alvo-toque); }
+}

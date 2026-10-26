@@ -1,0 +1,43 @@
+.wrap { position: relative; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 4px 2px 12px;
+  border-radius: var(--raio-pilula);
+  background: var(--cor-primaria-fundo);
+  border: 1px solid var(--cor-primaria-suave);
+  color: var(--cor-texto-verde);
+  font-weight: 600;
+}
+.remove {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--cor-texto);
+}
+.remove:hover { background: var(--cor-primaria-suave); }
+.list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 40;
+  max-height: 240px;
+  overflow: auto;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--cor-fundo);
+  border: var(--borda-padrao);
+  border-radius: var(--raio-pequeno);
+  box-shadow: var(--elevacao-flutuante);
+}
+.option { min-height: var(--alvo-toque); display: flex; align-items: center; padding: 0 12px; border-radius: 8px; cursor: pointer; }
+.active { background: var(--cor-primaria-fundo); outline: 2px solid var(--cor-tinta); outline-offset: -2px; }
+.note { padding: 8px 12px; font-size: var(--texto-meta); color: var(--cor-texto-secundario); }

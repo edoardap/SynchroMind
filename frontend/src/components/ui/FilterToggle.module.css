@@ -1,0 +1,11 @@
+.set { display: inline-flex; gap: 8px; border: 0; margin: 0; padding: 0; }
+.option { position: relative; }
+.input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.label {
+  display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px;
+  border: 1px solid var(--cor-borda-campo); border-radius: var(--raio-pilula); background: var(--cor-fundo);
+  font-size: 15px; font-weight: 600;
+}
+.input:checked + .label { background: var(--cor-tinta); border-color: var(--cor-tinta); color: #fff; }
+.input:focus-visible + .label { outline: 2px solid var(--cor-tinta); outline-offset: 2px; }
+.input:not(:checked):hover + .label { border-color: var(--cor-texto-verde); }

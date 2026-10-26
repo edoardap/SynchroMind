@@ -1,0 +1,80 @@
+/*
+ * Tokens do design (docs/design/forum-conhecimento.md, seção 4).
+ * Base: IDE.IA Design System. Os marcados "novo" não existem no design system
+ * e são as correções de contraste decididas para atender o RNF-06.
+ */
+:root {
+  /* Cores (4.1) */
+  --cor-primaria: #58bf62;
+  --cor-primaria-hover: #3f8a47;
+  --cor-primaria-suave: #caebcd;
+  --cor-primaria-fundo: #eef9ef;
+  --cor-texto-verde: #2f6f37; /* novo: verde de texto, 6,1:1 sobre branco */
+  --cor-tinta: #22212c;
+  --cor-tinta-elevada: #383741;
+  --cor-texto: #1a1a1a;
+  --cor-titulo: #000000;
+  --cor-texto-secundario: #5c5c5c;
+  --cor-borda: #e3e3e3;
+  --cor-borda-campo: #8a8a8a; /* novo: 3,4:1 para componentes */
+  --cor-fundo: #ffffff;
+  --cor-erro: #b3261e; /* novo */
+  --cor-erro-fundo: #fdecea; /* novo */
+  --cor-aviso-fundo: #fff4d6; /* novo */
+  --cor-sobre-escuro: rgba(255, 255, 255, 0.92);
+
+  /* Tipografia (4.2) */
+  --fonte: 'Urbanist', system-ui, sans-serif;
+  --texto-h1: 44px;
+  --texto-h1-detalhe: 34px;
+  --texto-h2: 26px;
+  --texto-titulo-item: 18px;
+  --texto-corpo-leitura: 17px;
+  --texto-corpo: 16px;
+  --texto-meta: 14px;
+  --texto-rotulo: 12px;
+
+  /* Espaçamento, forma e elevação (4.3) */
+  --espaco-1: 8px;
+  --espaco-2: 16px;
+  --espaco-3: 24px;
+  --espaco-4: 32px;
+  --espaco-5: 48px;
+  --espaco-6: 64px;
+  --espaco-7: 96px;
+  --espaco-meio-1: 4px;
+  --espaco-meio-2: 12px;
+  --raio-cartao: 20px;
+  --raio-pilula: 999px;
+  --raio-campo-texto: 18px;
+  --raio-pequeno: 12px;
+  --raio-codigo: 6px;
+  --borda-padrao: 1px solid var(--cor-borda);
+  --borda-destaque: 2px solid var(--cor-primaria);
+  --elevacao-flutuante: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --elevacao-janela: 0 16px 40px rgba(0, 0, 0, 0.16);
+  --largura-conteudo: 1180px;
+  --largura-leitura: 760px;
+  --largura-formulario: 820px;
+  --altura-cabecalho: 72px;
+  --margem-pagina: 40px;
+  --alvo-toque: 44px;
+  --transicao: 150ms;
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --margem-pagina: 24px;
+  }
+}
+
+@media (max-width: 639px) {
+  :root {
+    --margem-pagina: 16px;
+    --texto-h1: 30px;
+    --texto-h1-detalhe: 26px;
+    --texto-h2: 22px;
+    --texto-titulo-item: 17px;
+    --altura-cabecalho: 56px;
+  }
+}

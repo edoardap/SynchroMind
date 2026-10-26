@@ -1,0 +1,11 @@
+.page { min-height: 100dvh; display: flex; flex-direction: column; background: var(--cor-fundo); }
+.header { padding: 12px var(--margem-pagina); border-bottom: var(--borda-padrao); height: var(--altura-cabecalho); display: flex; align-items: center; }
+.main { flex: 1; display: grid; align-items: start; justify-items: center; padding: 40px var(--margem-pagina) 64px; }
+.main:focus { outline: none; }
+.card { width: min(100%, 480px); border: var(--borda-padrao); border-radius: var(--raio-cartao); padding: 32px; display: grid; gap: 20px; }
+.wide { width: min(100%, 560px); }
+
+@media (max-width: 639px) {
+  .main { padding-top: 24px; }
+  .card { padding: 20px 16px; border-radius: 16px; }
+}

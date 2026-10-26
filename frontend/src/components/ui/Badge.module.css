@@ -1,0 +1,20 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid transparent;
+  border-radius: var(--raio-pilula);
+  font-size: var(--texto-rotulo);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+.outline { border-color: var(--cor-borda-campo); color: var(--cor-texto); }
+.primary { background: var(--cor-primaria); color: var(--cor-tinta); }
+.soft { background: var(--cor-primaria-suave); color: var(--cor-texto-verde); }
+.dark { background: var(--cor-tinta); color: #fff; }
+.hidden { background: var(--cor-erro-fundo); border-color: var(--cor-erro); color: var(--cor-erro); }
+.pending { background: var(--cor-aviso-fundo); color: var(--cor-tinta); border-color: var(--cor-tinta); }

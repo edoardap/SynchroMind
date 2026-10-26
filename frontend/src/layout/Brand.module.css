@@ -1,0 +1,18 @@
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--cor-titulo); text-decoration: none; min-height: var(--alvo-toque); }
+.brand:hover { text-decoration: none; }
+.mark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  background: var(--cor-primaria);
+  color: var(--cor-tinta);
+  border-radius: var(--raio-pequeno);
+  font-size: 16px;
+  font-weight: 900;
+}
+.name { font-size: 19px; font-weight: 800; letter-spacing: -0.01em; }
+
+@media (max-width: 399px) {
+  .name { display: none; }
+}

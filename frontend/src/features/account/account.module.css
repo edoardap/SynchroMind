@@ -1,0 +1,8 @@
+.page { max-width: var(--largura-leitura); margin: 0 auto; display: grid; gap: 24px; }
+.more { display: grid; justify-items: center; }
+.data { display: grid; gap: 16px; border: var(--borda-padrao); border-radius: var(--raio-cartao); padding: 24px; }
+.data dd { font-size: 18px; font-weight: 600; }
+.danger { border: 2px solid var(--cor-erro); border-radius: var(--raio-cartao); padding: 24px; display: grid; gap: 12px; justify-items: start; }
+.dangerLabel { display: flex; align-items: center; gap: 6px; color: var(--cor-erro); }
+.pending { display: grid; gap: 8px; justify-items: start; }
+.steps { display: grid; gap: 10px; padding-left: 20px; list-style: disc; }
